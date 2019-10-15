@@ -49,7 +49,7 @@
 		"nxdomain": true
 	},
 	{
-		"service": "AWS/S3 bucket",
+		"service": "AWS/S3",
 		"cname": [
 			"amazonaws",
             "s3-website"
