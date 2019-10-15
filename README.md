@@ -10,9 +10,10 @@ Subjack is a Subdomain Takeover tool written in Go designed to scan a list of su
 
 Subjack will also check for subdomains attached to domains that don't exist (NXDOMAIN) and are **available to be registered**. No need for dig ever again! This is still cross-compatible too.
 
-**What's New? (Last Updated 09/17/19)**
+**What's New? (Last Updated 09/17/18)**
 - Custom fingerprint support
-- New Services (Added Canny and Helprace)
+- New Services (Re-added Zendesk && Added Readme, Bitly, and more)
+- Slight performance enhancements
 
 ## Installing
 
@@ -61,9 +62,10 @@ func main() {
 	json.Unmarshal(config, &fingerprints)
 
 	subdomain := "dead.cody.su"
+	server := "8.8.8.8"
 	/* Use subjack's advanced detection to identify 
 	if the subdomain is able to be taken over. */
-	service := subjack.Identify(subdomain, false, 10, fingerprints)
+	service := subjack.Identify(subdomain, false, 10, server, fingerprints)
 
 	if service != "" {
 		service = strings.ToLower(service)
