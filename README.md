@@ -19,7 +19,7 @@ Subjack will also check for subdomains attached to domains that don't exist (NXD
 
 Requires [Go](https://golang.org/dl/)
 
-`go get github.com/sumgr0/subjack`
+`go get github.com/haccer/subjack`
 
 ## How To Use:
 
@@ -62,10 +62,9 @@ func main() {
 	json.Unmarshal(config, &fingerprints)
 
 	subdomain := "dead.cody.su"
-	server := "8.8.8.8"
 	/* Use subjack's advanced detection to identify 
 	if the subdomain is able to be taken over. */
-	service := subjack.Identify(subdomain, false, 10, server, fingerprints)
+	service := subjack.Identify(subdomain, false, 10, fingerprints)
 
 	if service != "" {
 		service = strings.ToLower(service)
