@@ -2,7 +2,8 @@
 	{
 		"service": "Acquia",
 		"cname": [
-            "acquia.com"
+			"acquia.com",
+			"acquia-test.com"
 		],
 		"fingerprint": [
             "The site you are looking for could not be found.",
@@ -138,11 +139,24 @@
 		"nxdomain": false
 	},
 	{
+		"service": "cloudfront",
+		"cname": [
+			".cloudfront.net"
+		],
+		"fingerprint": [
+			"ERROR: The request could not be satisfied"
+		],
+		"nxdomain": false,
+		"edge": true
+	},
+	{
 		"service": "Cargocollective",
 		"cname": [
 			"subdomain.cargocollective.com"
 		],
-		"fingerprint": [],
+		"fingerprint": [
+			"Connect it by adding it to your Settings."
+		],
 		"nxdomain": false
 	},
 	{
@@ -162,6 +176,16 @@
 		],
 		"fingerprint": [
 		        "Requested Domain Unavailable"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "edgecastcdn",
+		"cname": [
+			".edgecastcdn.net"
+		],
+		"fingerprint": [
+			"<h1>404 - Not Found</h1>"
 		],
 		"nxdomain": false
 	},
@@ -229,7 +253,7 @@
 			"ghost.io"
 		],
 		"fingerprint": [
-			"The thing you were looking for is no longer here, or never"
+			"The thing you were looking for is no longer here, or never was"
 		],
 		"nxdomain": false
 	},
@@ -289,7 +313,8 @@
 		"cname": [
 			"herokuapp.com",
 			"herokudns.com",
-            "herokussl.com"
+			"herokussl.com",
+			"herokuapp"
 		],
 		"fingerprint": [
 			"herokucdn.com/error-pages/no-such-app.html",
@@ -359,7 +384,17 @@
 		    "It looks like you may have taken a wrong turn somewhere. Don't worry...it happens to all of us."
 		],
 		"nxdomain": false
-    },
+	},
+	{
+		"service": "mashery",
+		"cname": [
+			"mashery.com"
+		],
+		"fingerprint": [
+			"Unrecognized domain"
+		],
+		"nxdomain": false
+	},
     {
 		"service": "Naver",
 		"cname": [
@@ -453,7 +488,8 @@
 			"strikinglydns.com"
 		],
         "fingerprint": [
-            "But if you're looking to build your own website,"
+			"But if you're looking to build your own website,",
+			"<h1> PAGE NOT FOUND.</h1>"
         ],
         
 		"nxdomain": false
@@ -465,6 +501,16 @@
 		],
 		"fingerprint": [],
 		"nxdomain": true
+	},
+	{
+		"service": "squarespace",
+		"cname": [
+			".squarespace.com"
+		],
+		"fingerprint": [
+			"Squarespace - Claim This Domain"
+		],
+		"nxdomain": false
 	},
 	{
 		"service": "Surge",
@@ -550,13 +596,15 @@
 		"nxdomain": false
     },
 	{
-		"service": "Uptimerobot",
+		"service": "uptimerobot",
 		"cname": [
-			"uptimerobot.com"
+			"stats.uptimerobot.com"
 		],
-		"fingerprint": [],
+		"fingerprint": [
+			"Redirecting to https://uptimerobot.com/"
+		],
 		"nxdomain": false
-    },
+	},
 	{
 		"service": "Vend",
 		"cname": [
@@ -570,7 +618,8 @@
 	{
 		"service": "Webflow",
 		"cname": [
-			"webflow.com"
+			"proxy.webflow.com",
+			"proxy-ssl.webflow.com"
 		],
 		"fingerprint": [
 			"<p class=\"description\">The page you are looking for doesn't exist or has been moved.</p>"
