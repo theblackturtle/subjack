@@ -214,9 +214,12 @@
 	{
 		"service": "Fly",
 		"cname": [
-			"fly.io"
+			"fly.io",
+			"shw.io"
 		],
-        "fingerprint": [],
+        "fingerprint": [
+			"Not Found"
+		],
 		"nxdomain": false
     },
     {
