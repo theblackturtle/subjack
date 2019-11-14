@@ -19,7 +19,7 @@ Subjack will also check for subdomains attached to domains that don't exist (NXD
 
 Requires [Go](https://golang.org/dl/)
 
-`go get github.com/haccer/subjack`
+`go get github.com/sumgr0/subjack`
 
 ## How To Use:
 
@@ -52,7 +52,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/haccer/subjack/subjack"
+	"github.com/sumgr0/subjack"
 )
  
 

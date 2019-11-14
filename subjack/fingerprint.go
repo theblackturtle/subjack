@@ -13,6 +13,7 @@ type Fingerprints struct {
 	Cname       []string `json:"cname"`
 	Fingerprint []string `json:"fingerprint"`
 	Nxdomain    bool     `json:"nxdomain"`
+	Edge        bool     `json:"edge"`
 }
 
 /*
@@ -36,14 +37,18 @@ VERIFY:
 	return match
 }
 
-func detect(url, output string, ssl, verbose, manual bool, timeout int, config []Fingerprints) {
-	service := Identify(url, ssl, manual, timeout, config)
+func detect(url, output string, nocolor, ssl, followRedirects, verbose, manual bool, timeout int, userAgent string, config []Fingerprints) {
+	service := Identify(url, ssl, followRedirects, manual, timeout, userAgent, config)
 
 	if service != "" {
 		result := fmt.Sprintf("[%s] %s\n", service, url)
-		c := fmt.Sprintf("\u001b[32;1m%s\u001b[0m", service)
-		out := strings.Replace(result, service, c, -1)
-		fmt.Printf(out)
+		if nocolor {
+			fmt.Printf(result)
+		} else {
+			c := fmt.Sprintf("\u001b[32;1m%s\u001b[0m", service)
+			out := strings.Replace(result, service, c, -1)
+			fmt.Printf(out)
+		}
 
 		if output != "" {
 			if chkJSON(output) {
@@ -56,9 +61,13 @@ func detect(url, output string, ssl, verbose, manual bool, timeout int, config [
 
 	if service == "" && verbose {
 		result := fmt.Sprintf("[Not Vulnerable] %s\n", url)
-		c := "\u001b[31;1mNot Vulnerable\u001b[0m"
-		out := strings.Replace(result, "Not Vulnerable", c, -1)
-		fmt.Printf(out)
+		if nocolor {
+			fmt.Printf(result)
+		} else {
+			c := "\u001b[31;1mNot Vulnerable\u001b[0m"
+			out := strings.Replace(result, "Not Vulnerable", c, -1)
+			fmt.Printf(out)
+		}
 
 		if output != "" {
 			if chkJSON(output) {
@@ -75,8 +84,8 @@ func detect(url, output string, ssl, verbose, manual bool, timeout int, config [
 * is attached to a vulnerable cloud service and able to
 * be taken over.
  */
-func Identify(subdomain string, forceSSL, manual bool, timeout int, fingerprints []Fingerprints) (service string) {
-	body := get(subdomain, forceSSL, timeout)
+func Identify(subdomain string, forceSSL, followRedirects, manual bool, timeout int, userAgent string, fingerprints []Fingerprints) (service string) {
+	body := get(subdomain, forceSSL, followRedirects, userAgent, timeout)
 
 	cname := resolve(subdomain)
 
