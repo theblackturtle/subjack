@@ -627,6 +627,14 @@
 		"nxdomain": false
 	},
 	{
+		"service": "webmin",
+		"cname": [
+			"webmin"
+		],
+		"fingerprint": [],
+		"nxdomain": false
+	},
+	{
 		"service": "wishpond",
 		"cname": [
 			"wishpond.com"
