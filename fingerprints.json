@@ -1,6 +1,6 @@
 [
 	{
-		"service": "Acquia",
+		"service": "acquia",
 		"cname": [
 			"acquia.com",
 			"acquia-test.com"
@@ -12,7 +12,7 @@
 		"nxdomain": false
 	},
     {
-		"service": "Aftership",
+		"service": "aftership",
 		"cname": [
 			"aftership.com"
 		],
@@ -22,7 +22,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Aha!",
+		"service": "aha!",
 		"cname": [
 			"ideas.aha.io"
 		],
@@ -32,7 +32,7 @@
 		"nxdomain": false
     },
     {
-		"service": "Airee",
+		"service": "airee",
 		"cname": [
 			"cdn.airee.ru"
 		],
@@ -42,7 +42,7 @@
 		"nxdomain": false
     },
     {
-		"service": "Apigee",
+		"service": "apigee",
 		"cname": [
 			"-portal.apigee.net"
 		],
@@ -50,7 +50,7 @@
 		"nxdomain": true
 	},
 	{
-		"service": "AWS/S3",
+		"service": "aws/s3",
 		"cname": [
 			"amazonaws",
             "s3-website"
@@ -62,7 +62,7 @@
 		"nxdomain": false
 	},
     {
-		"service": "Azure",
+		"service": "azure",
 		"cname": [
 			".azurewebsites.net",
 			".cloudapp.net",
@@ -86,7 +86,7 @@
 		"nxdomain": true
     },
 	{
-		"service": "Bitbucket",
+		"service": "bitbucket",
 		"cname": [
 			"bitbucket.io"
 		],
@@ -96,7 +96,7 @@
 		"nxdomain": false
     },
 	{
-		"service": "Brightcove",
+		"service": "brightcove",
 		"cname": [
 			"bcvp0rtal.com",
 			"brightcove.com"
@@ -107,7 +107,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Bigcartel",
+		"service": "bigcartel",
 		"cname": [
 			"bigcartel.com"
 		],
@@ -117,7 +117,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Campaignmonitor",
+		"service": "campaignmonitor",
 		"cname": [
 			"cname.createsend.com"
 		],
@@ -128,7 +128,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Canny",
+		"service": "canny",
 		"cname": [
 			"cname.canny.io"
 		],
@@ -138,19 +138,18 @@
 		],
 		"nxdomain": false
 	},
+	// {
+	// 	"service": "cloudfront",
+	// 	"cname": [
+	// 		".cloudfront.net"
+	// 	],
+	// 	"fingerprint": [
+	// 		"ERROR: The request could not be satisfied"
+	// 	],
+	// 	"nxdomain": false,
+	// },
 	{
-		"service": "cloudfront",
-		"cname": [
-			".cloudfront.net"
-		],
-		"fingerprint": [
-			"ERROR: The request could not be satisfied"
-		],
-		"nxdomain": false,
-		"edge": true
-	},
-	{
-		"service": "Cargocollective",
+		"service": "cargocollective",
 		"cname": [
 			"subdomain.cargocollective.com"
 		],
@@ -160,7 +159,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Digitaloceanspaces",
+		"service": "digitaloceanspaces",
 		"cname": [
 			"digitaloceanspaces.com"
 		],
@@ -170,7 +169,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Distil",
+		"service": "distil",
 		"cname": [
 			".distil.us"
 		],
@@ -190,7 +189,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Fastly",
+		"service": "fastly",
 		"cname": [
 			"global.prod.fastly.net",
 			"map.fastly.net"
@@ -202,7 +201,7 @@
 		"nxdomain": false
     },
 	{
-		"service": "Feedpress",
+		"service": "feedpress",
 		"cname": [
 			"redirect.feedpress.me"
 		],
@@ -212,7 +211,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Fly",
+		"service": "fly",
 		"cname": [
 			"fly.io",
 			"shw.io"
@@ -221,7 +220,7 @@
 		"nxdomain": false
     },
     {
-		"service": "Fider",
+		"service": "fider",
 		"cname": [
 			"fider.io"
 		],
@@ -229,7 +228,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Frontify",
+		"service": "frontify",
 		"cname": [
 			"frontify.com"
 		],
@@ -239,7 +238,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Getresponse",
+		"service": "getresponse",
 		"cname": [
 			".gr8.com"
 		],
@@ -249,7 +248,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Ghost",
+		"service": "ghost",
 		"cname": [
 			"ghost.io"
 		],
@@ -259,7 +258,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Github",
+		"service": "github",
 		"cname": [
 			"github.io"
 		],
@@ -270,7 +269,7 @@
 		"nxdomain": false
     },
     {
-		"service": "Hatenablog",
+		"service": "hatenablog",
 		"cname": [
 			"hatenablog.com"
 		],
@@ -280,7 +279,7 @@
 		"nxdomain": false
     },
 	{
-		"service": "Helprace",
+		"service": "helprace",
 		"cname": [
 			"helprace.com"
 		],
@@ -290,7 +289,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Helpjuice",
+		"service": "helpjuice",
 		"cname": [
 			"helpjuice.com"
 		],
@@ -300,7 +299,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Helpscout",
+		"service": "helpscout",
 		"cname": [
 			"helpscoutdocs.com"
 		],
@@ -310,7 +309,7 @@
 		"nxdomain": false
     },
     {
-		"service": "Heroku",
+		"service": "heroku",
 		"cname": [
 			"herokuapp.com",
 			"herokudns.com",
@@ -324,7 +323,7 @@
 		"nxdomain": false
     },
     {
-		"service": "Instapage",
+		"service": "instapage",
 		"cname": [
             "pageserve.co"
     	],
@@ -334,7 +333,7 @@
 		"nxdomain": false
     },
     {
-		"service": "Intercom",
+		"service": "intercom",
 		"cname": [
 			"custom.intercom.help",
 			"intercom.io"
@@ -347,7 +346,7 @@
 		"nxdomain": false
     },
 	{
-		"service": "JetBrains",
+		"service": "jetBrains",
 		"cname": [
 			"jetbrains.com"
 		],
@@ -357,7 +356,7 @@
 		"nxdomain": false
     },
     {
-		"service": "Kinsta",
+		"service": "kinsta",
 		"cname": [
 			"kinsta.com"
 		],
@@ -367,7 +366,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Landingi",
+		"service": "landingi",
 		"cname": [
 			"cname.landingi.com"
 		],
@@ -377,7 +376,7 @@
 		"nxdomain": false
     },
 	{
-		"service": "Launchrock",
+		"service": "launchrock",
 		"cname": [
 			"launchrock.com"
 		],
@@ -397,7 +396,7 @@
 		"nxdomain": false
 	},
     {
-		"service": "Naver",
+		"service": "naver",
 		"cname": [
 			"" 
 		],
@@ -407,7 +406,7 @@
 		"nxdomain": false
 	},
     {
-		"service": "Netlify",
+		"service": "netlify",
 		"cname": [
 			".netlify.com"
 		],
@@ -415,7 +414,7 @@
 		"nxdomain": false
     },
     {
-		"service": "Ngrok",
+		"service": "ngrok",
 		"cname": [
 			"ngrok.io"
 		],
@@ -434,7 +433,7 @@
 		"nxdomain": false
     },
 	{
-		"service": "Pingdom",
+		"service": "pingdom",
 		"cname": [
 			"stats.pingdom.com"
 		],
@@ -442,7 +441,7 @@
 		"nxdomain": false
     },
 	{
-		"service": "Readme",
+		"service": "readme",
 		"cname": [
 			"cname.readme.io",
 			"ssl.readmessl.com"
@@ -453,7 +452,7 @@
 		"nxdomain": false
     },
 	{
-		"service": "Shopify",
+		"service": "shopify",
 		"cname": [
 			"shops.myshopify.com"
 		],
@@ -464,7 +463,7 @@
 		"nxdomain": false
     },
 	{
-		"service": "Simplebooklet",
+		"service": "simplebooklet",
 		"cname": [
 			"simplebooklet.com"
 		],
@@ -474,7 +473,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Statuspage",
+		"service": "statuspage",
 		"cname": [
 			"statuspage.io"
 		],
@@ -484,7 +483,7 @@
 		"nxdomain": false
     },
 	{
-		"service": "Strikingly",
+		"service": "strikingly",
 		"cname": [
 			"strikinglydns.com"
 		],
@@ -496,7 +495,7 @@
 		"nxdomain": false
     },
     {
-		"service": "Smugmug",
+		"service": "smugmug",
 		"cname": [
 			"domains.smugmug.com"
 		],
@@ -514,7 +513,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Surge",
+		"service": "surge",
 		"cname": [
 			"surge.sh"
 		],
@@ -524,7 +523,7 @@
 		"nxdomain": false
     },
 	{
-		"service": "Surveygizmo-eu",
+		"service": "surveygizmo-eu",
 		"cname": [
 			"privatedomain.surveygizmo.eu"
 		],
@@ -534,7 +533,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Teamwork",
+		"service": "teamwork",
 		"cname": [
 			"teamwork.com"
 		],
@@ -544,7 +543,7 @@
 		"nxdomain": false
     },
     {
-		"service": "Tictail",
+		"service": "tictail",
 		"cname": [
 			"domains.tictail.com"
 		],
@@ -556,7 +555,7 @@
 		"nxdomain": false
     },
     {
-		"service": "Tistory",
+		"service": "tistory",
 		"cname": [
 			"tistory.io"
 		],
@@ -566,7 +565,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Tilda",
+		"service": "tilda",
 		"cname": [
 			"tilda.ws"
 		],
@@ -576,7 +575,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Tumblr",
+		"service": "tumblr",
 		"cname": [
 			"domains.tumblr.com"
 		],
@@ -587,7 +586,7 @@
 		"nxdomain": false
     },
 	{
-		"service": "Uservoice",
+		"service": "uservoice",
 		"cname": [
 			"uservoice.com"
 		],
@@ -607,7 +606,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Vend",
+		"service": "vend",
 		"cname": [
 			"vendecommerce.com"
 		],
@@ -617,7 +616,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Webflow",
+		"service": "webflow",
 		"cname": [
 			"proxy.webflow.com",
 			"proxy-ssl.webflow.com"
@@ -628,7 +627,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Wishpond",
+		"service": "wishpond",
 		"cname": [
 			"wishpond.com"
 		],
@@ -638,7 +637,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Wordpress",
+		"service": "wordpress",
 		"cname": [
 			"wordpress.com"
 		],
@@ -648,7 +647,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "Zendesk",
+		"service": "zendesk",
 		"cname": [
 			"zendesk.com"
 		],
