@@ -179,16 +179,6 @@
 		"nxdomain": false
 	},
 	{
-		"service": "edgecastcdn",
-		"cname": [
-			".edgecastcdn.net"
-		],
-		"fingerprint": [
-			"<h1>404 - Not Found</h1>"
-		],
-		"nxdomain": false
-	},
-	{
 		"service": "fastly",
 		"cname": [
 			"global.prod.fastly.net",
