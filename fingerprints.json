@@ -1,16 +1,4 @@
 [
-	{
-		"service": "acquia",
-		"cname": [
-			"acquia.com",
-			"acquia-test.com"
-		],
-		"fingerprint": [
-            "The site you are looking for could not be found.",
-            "If you are an Acquia Cloud customer and expect to see your site at this address"
-		],
-		"nxdomain": false
-	},
     {
 		"service": "aftership",
 		"cname": [
@@ -41,14 +29,6 @@
 		],
 		"nxdomain": false
     },
-    {
-		"service": "apigee",
-		"cname": [
-			"-portal.apigee.net"
-		],
-		"fingerprint": [],
-		"nxdomain": true
-	},
 	{
 		"service": "aws/s3",
 		"cname": [
