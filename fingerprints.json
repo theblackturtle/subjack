@@ -99,7 +99,7 @@
 	{
 		"service": "campaignmonitor",
 		"cname": [
-			"cname.createsend.com"
+			"createsend.com"
 		],
 		"fingerprint": [
 			"Double check the URL or <a href=\"mailto:help@createsend.com",
