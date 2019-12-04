@@ -103,7 +103,7 @@
 		],
 		"fingerprint": [
 			"Double check the URL or <a href=\"mailto:help@createsend.com",
-			"Trying to access your account?"
+			"'Trying to access your account?'"
 		],
 		"nxdomain": false
 	},
@@ -121,7 +121,7 @@
 	{
 		"service": "cargocollective",
 		"cname": [
-			""
+			"subdomain.cargocollective.com"
 		],
 		"fingerprint": [
 			"Connect it by adding it to your Settings."
@@ -134,7 +134,8 @@
 			"digitaloceanspaces.com"
 		],
 		"fingerprint": [
-		        "</BucketName><RequestId>tx000000000000"
+				"</BucketName><RequestId>tx000000000000",
+				"Domain uses DO name serves with no records in DO."
 		],
 		"nxdomain": false
 	},
