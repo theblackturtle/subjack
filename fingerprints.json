@@ -121,7 +121,7 @@
 	{
 		"service": "cargocollective",
 		"cname": [
-			"subdomain.cargocollective.com"
+			""
 		],
 		"fingerprint": [
 			"Connect it by adding it to your Settings."
@@ -190,10 +190,10 @@
 	{
 		"service": "frontify",
 		"cname": [
-			"frontify.com"
+			""
 		],
 		"fingerprint": [
-			"Oops... looks like you got lost"
+			"404 - Page not found. Oops... look like you got lost."
 		],
 		"nxdomain": false
 	},
@@ -352,6 +352,18 @@
 		],
 		"fingerprint": [
 			"Unrecognized domain"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "nationbuilder",
+		"cname": [
+			"" 
+		],
+		"fingerprint": [
+		    "Page cannot be found.
+
+			The URL you requested either moved or no longer exists."
 		],
 		"nxdomain": false
 	},
