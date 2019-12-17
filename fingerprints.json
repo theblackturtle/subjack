@@ -28,6 +28,17 @@
 		     "Ошибка 402"
 		],
 		"nxdomain": false
+	},
+	{
+		"service": "anima",
+		"cname": [
+			"animaapp.com"
+		],
+		"fingerprint": [
+			 "Missing Website",
+			 "If this is your website and you've just created it, try refreshing in a minute."
+		],
+		"nxdomain": false
     },
 	{
 		"service": "aws/s3",
