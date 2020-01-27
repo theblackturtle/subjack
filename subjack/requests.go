@@ -1,34 +1,38 @@
 package subjack
 
 import (
-	"crypto/tls"
+	"net/http"
 	"time"
 
-	"github.com/valyala/fasthttp"
+	"github.com/go-resty/resty/v2"
 )
 
 func get(url string, ssl bool, followRedirects bool, userAgent string, timeout int) (body []byte) {
-	client := &fasthttp.Client{TLSConfig: &tls.Config{InsecureSkipVerify: true}}
-	client.Name = userAgent
-
-	if followRedirects {
-		_, body, _ := client.GetTimeout(nil, site(url, ssl), time.Duration(timeout)*time.Second)
-		return body
-	} else {
-		req := fasthttp.AcquireRequest()
-		req.SetRequestURI(site(url, ssl))
-		req.Header.Add("Connection", "close")
-		resp := fasthttp.AcquireResponse()
-		client.DoTimeout(req, resp, time.Duration(timeout)*time.Second)
-		return resp.Body()
-	}
-}
-
-func site(url string, ssl bool) (site string) {
-	site = "http://" + url
 	if ssl {
-		site = "https://" + url
+		url = "https://" + url
+	} else {
+		url = "http://" + url
 	}
 
-	return site
+	client := resty.New()
+	if followRedirects {
+		client.SetRedirectPolicy(resty.RedirectPolicyFunc(func(req *http.Request, via []*http.Request) error {
+			return nil
+		}))
+	} else {
+		client.SetRedirectPolicy(resty.RedirectPolicyFunc(func(req *http.Request, via []*http.Request) error {
+			return http.ErrUseLastResponse
+		}))
+	}
+
+	client.SetHeader("User-Agent", userAgent)
+	client.SetHeader("Connection", "close")
+	client.SetTimeout(time.Duration(timeout) * time.Second)
+	client.SetCloseConnection(true)
+
+	resp, err := client.R().Get(url)
+	if err != nil {
+		return []byte{}
+	}
+	return resp.Body()
 }

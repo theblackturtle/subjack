@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/sumgr0/subjack/subjack"
+	"github.com/theblackturtle/subjack/subjack"
 )
 
 var version string = "DEV"
