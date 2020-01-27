@@ -1,6 +1,7 @@
 package subjack
 
 import (
+	"crypto/tls"
 	"net/http"
 	"time"
 
@@ -25,10 +26,12 @@ func get(url string, ssl bool, followRedirects bool, userAgent string, timeout i
 		}))
 	}
 
+	client.SetTLSClientConfig(&tls.Config{InsecureSkipVerify: true})
 	client.SetHeader("User-Agent", userAgent)
 	client.SetHeader("Connection", "close")
 	client.SetTimeout(time.Duration(timeout) * time.Second)
 	client.SetCloseConnection(true)
+	client.SetDisableWarn(true)
 
 	resp, err := client.R().Get(url)
 	if err != nil {
